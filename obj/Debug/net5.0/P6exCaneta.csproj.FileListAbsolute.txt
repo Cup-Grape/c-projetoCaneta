@@ -1,0 +1,16 @@
+C:\Users\Felip\Desktop\C#\P6exCaneta\bin\Debug\net5.0\P6exCaneta.exe
+C:\Users\Felip\Desktop\C#\P6exCaneta\bin\Debug\net5.0\P6exCaneta.deps.json
+C:\Users\Felip\Desktop\C#\P6exCaneta\bin\Debug\net5.0\P6exCaneta.runtimeconfig.json
+C:\Users\Felip\Desktop\C#\P6exCaneta\bin\Debug\net5.0\P6exCaneta.runtimeconfig.dev.json
+C:\Users\Felip\Desktop\C#\P6exCaneta\bin\Debug\net5.0\P6exCaneta.dll
+C:\Users\Felip\Desktop\C#\P6exCaneta\bin\Debug\net5.0\ref\P6exCaneta.dll
+C:\Users\Felip\Desktop\C#\P6exCaneta\bin\Debug\net5.0\P6exCaneta.pdb
+C:\Users\Felip\Desktop\C#\P6exCaneta\obj\Debug\net5.0\P6exCaneta.csprojAssemblyReference.cache
+C:\Users\Felip\Desktop\C#\P6exCaneta\obj\Debug\net5.0\P6exCaneta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felip\Desktop\C#\P6exCaneta\obj\Debug\net5.0\P6exCaneta.AssemblyInfoInputs.cache
+C:\Users\Felip\Desktop\C#\P6exCaneta\obj\Debug\net5.0\P6exCaneta.AssemblyInfo.cs
+C:\Users\Felip\Desktop\C#\P6exCaneta\obj\Debug\net5.0\P6exCaneta.csproj.CoreCompileInputs.cache
+C:\Users\Felip\Desktop\C#\P6exCaneta\obj\Debug\net5.0\P6exCaneta.dll
+C:\Users\Felip\Desktop\C#\P6exCaneta\obj\Debug\net5.0\ref\P6exCaneta.dll
+C:\Users\Felip\Desktop\C#\P6exCaneta\obj\Debug\net5.0\P6exCaneta.pdb
+C:\Users\Felip\Desktop\C#\P6exCaneta\obj\Debug\net5.0\P6exCaneta.genruntimeconfig.cache
