@@ -16,7 +16,7 @@ namespace P6exCaneta
             nv = Convert.ToInt32(Console.ReadLine());
             Console.Write("Cor da tinta:");
             cr = Console.ReadLine();
-            Console.Write("Espessura da ponta: ");
+            Console.Write("Espessura da ponta da caneta: ");
             pt = Convert.ToDouble(Console.ReadLine());
 
             obj.cor = cr;
