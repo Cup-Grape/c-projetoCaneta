@@ -22,7 +22,8 @@ namespace P6exCaneta
             obj.cor = cr;
             obj.ponta = pt;
 
-            Console.WriteLine($"Ponta: {cr}  Ponta: {pt}");
+            Console.Clear();
+            Console.WriteLine($"Cor: {cr}  Ponta: {pt} Nivel da tinta: {nv} ");
 
             obj.tamparEdestampar();
             obj.rabiscar(nv);

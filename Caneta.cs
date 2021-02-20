@@ -21,7 +21,6 @@ class Caneta
         {
             if(tintaQtde >= 1)
             {
-                Console.WriteLine($"A tinta está {tintaQtde}%");
                 Console.WriteLine("A caneta está rabiscando..");
                 Console.ReadLine();
             }
@@ -29,7 +28,6 @@ class Caneta
             else
             {
                 Console.WriteLine("Tinta insuficiente!");
-                Console.WriteLine($"Nivel da tinta: {tintaQtde}");
                 Console.ReadLine();
             }
 
