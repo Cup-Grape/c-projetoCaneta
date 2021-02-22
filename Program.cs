@@ -6,11 +6,16 @@ namespace P6exCaneta
     {
         static void Main(string[] args)
         {
+            //Variaveis
             int nv;
             string cr;
             double pt;
+            //Variaveis
 
+            //Chamando o obj Caneta
             Caneta obj = new Caneta();
+            //Chamando o obj Caneta
+
 
             Console.Write("Nivel da tinta:");
             nv = Convert.ToInt32(Console.ReadLine());
@@ -19,15 +24,25 @@ namespace P6exCaneta
             Console.Write("Espessura da ponta da caneta: ");
             pt = Convert.ToDouble(Console.ReadLine());
 
-            obj.cor = cr;
-            obj.ponta = pt;
+            //Chamando os atributos privados
+            obj.Cor = cr;
+            obj.Ponta = pt;
+            //Chamando os atributos privados
 
+
+            //Limpa o console
             Console.Clear();
-            Console.WriteLine($"Cor: {cr}  Ponta: {pt} Nivel da tinta: {nv} ");
 
+            //Apresentação
+            Console.WriteLine($"Cor: {obj.Cor}");
+            Console.WriteLine($"Ponta: {obj.Ponta}");
+            Console.WriteLine($"Nivel da tinta: {nv}");
+            //Apresentação
+
+            //Chamando os métodos
             obj.tamparEdestampar();
             obj.rabiscar(nv);
-            
+            //Chamando os métodos
 
         }
     }

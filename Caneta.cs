@@ -5,11 +5,27 @@ class Caneta
 {
 
     //Atributos//
-    public double ponta;
-    public string cor;
-    public bool tampa = true;
-    protected int tintaQtde;
+    private double ponta;
+    private string cor;
+    private bool tampa = true;
+    private int tintaQtde;
     //Atributos//
+
+    //Get e Set
+    public double Ponta
+    {
+        get{return ponta;}
+        set{ponta = value;}
+    }
+
+
+    public string Cor
+    {
+        get{return cor;}
+        set{cor = value;}
+    }
+    //Get e set
+
 
 
     //Métodos//
