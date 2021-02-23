@@ -9,8 +9,6 @@ class Caneta
     private string cor;
     private bool tampa = true;
     private int tintaQtde = 100;
-    private bool qdc = false;
-    //QDC = Qualidade da caneta
     //Atributos//
 
     
@@ -37,13 +35,6 @@ class Caneta
         get{return tintaQtde;}
         set{tintaQtde = value;}
     }
-
-    //Atributo se a caneta está ok
-    public bool Qdc
-    {
-       get{return qdc;}
-       set{qdc = value;}
-    }
     //Get e set
 
 
@@ -59,29 +50,35 @@ class Caneta
         if(tampa == false)
         {
             //Confere se a tinta está ok
-            if(tintaQtde >= 1)
+            if(tintaQtde >= 10)
             {
                 Console.WriteLine("A caneta está liberada para rabiscar");
                 Console.ReadLine();
 
-                
-                Console.Clear();
-                Qdc = true;
+                //Calculo para gastar tinta
+                int calc;
+                calc = tintaQtde - 10;
+                tintaQtde = calc;
+                //_________________________
+
+                Console.WriteLine("Rabiscando...");
+                Console.WriteLine("Saindo tinta");
+                Console.ReadLine();
             }
             //____________________________
 
             //Tinta não está ok    
-            else
+            if(tintaQtde <= 0)
             {
-                Console.WriteLine("Não é possivel rabiscar");
+                Console.WriteLine("Rabiscando...");
+                Console.WriteLine("Não está saindo tinta");
+                Console.WriteLine($"{tintaQtde}%");
                 Console.ReadLine();
-
-                Qdc = false;
             }
             //____________________________
 
         }
-        //Se a tampa estiver fora da caneta
+        //________________________________
 
         //Se a tampa estiver na caneta
         else

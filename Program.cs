@@ -33,88 +33,53 @@ namespace P6exCaneta
             //Apresentação
             Console.WriteLine($"Cor: {obj.Cor}");
             Console.WriteLine($"Ponta: {obj.Ponta}");
-            Console.WriteLine($"Nivel da tinta: {obj.TintaQtde}");
+            Console.WriteLine($"Nivel da tinta: {obj.TintaQtde}%");
             //Apresentação
 
             //Chamando os métodos
             obj.tamparEdestampar();
-            obj.rabiscar();
+
+            //Menu
+            bool menu = true;
+
+            while(menu)
+            {
+                Console.Clear();
+                int escolha;
+                Console.WriteLine($"(1) Rabiscar gasta 10% da tinta ({obj.TintaQtde}%)");
+                Console.WriteLine($"(2) Deixar a caneta");
+                Console.Write($"Escolha: ");
+                escolha = Convert.ToInt32(Console.ReadLine());
+
+                //Escolha 1 rabiscar
+                if(escolha == 1)
+                {
+                    obj.rabiscar();
+                }
+                //__________________________
+
+                //Escolha 2 sair do programa
+                if(escolha == 2)
+                {
+                    Console.WriteLine("Caneta jogada na mesa");
+                    Console.WriteLine("...");
+                    menu = false;
+                }
+                //___________________________
+
+                //se usar um comando diferente
+                if(escolha != 1 && escolha != 2 )
+                {
+                    Console.WriteLine("Não conheço esse comando!");
+                    Console.ReadLine();
+                }
+                //____________________________
+
+            }
+            //Menu___________________
+            
             //Chamando os métodos
 
-            //usando a caneta
-            if(obj.Qdc == true)
-            {
-                //Variaveis
-                int tintalc;
-                bool menu = true;
-                int escolha;
-                //Variaveis
-
-                //Menu
-                while(menu == true)
-                {
-                    Console.WriteLine($"(1) Rabiscar (- 10 da tinta) Quantidade da tinta : {obj.TintaQtde}%");
-                    Console.WriteLine("(2) Fechar caneta");
-                    Console.Write("Escolha: ");
-                    escolha = Convert.ToInt32(Console.ReadLine());
-
-                    //escolha 1 rabiscar
-                    if(escolha == 1)
-                    {
-                        //Calculo da tinta
-                        tintalc = obj.TintaQtde - 10;
-                        obj.TintaQtde = tintalc;
-                        //____________________________
-
-                        //opção se tiver tinta
-                        if(obj.TintaQtde >= 1)
-                        {
-                            Console.WriteLine($"Rabiscando {obj.TintaQtde}" );
-                        }
-                        //_____________________________
-
-                        //se não tiver tinta
-                        if(obj.TintaQtde <= 0)
-                        {
-                            Console.WriteLine("A tinta acabou!!");
-                            Console.ReadLine();
-                            escolha = 2;
-                        }
-                        //_____________________________
-
-
-                    }
-                    //Escolha 1 rabiscar
-
-                    //Escolha 2 sair do programa
-                    if(escolha == 2)
-                    {
-                        Console.WriteLine("Caneta fechada");
-                        menu = false;
-                        Console.ReadLine();
-                    }
-                    //Escolha 2 sair do programa
-
-                    //Comando não identificado
-                    else
-                    {
-                        Console.WriteLine("Não conheço esse comando!");
-                        Console.ReadLine();
-                    }
-                    //Comando não identificado
-
-                }
-
-            }
-            //usando a caneta
-
-            //caneta não liberada
-            if(obj.Qdc == false)
-            {
-                Console.WriteLine("Saindo");
-                Console.ReadLine();
-            }
-            //caneta não liberada
 
         }
     }
