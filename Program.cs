@@ -7,7 +7,6 @@ namespace P6exCaneta
         static void Main(string[] args)
         {
             //Variaveis
-            int nv;
             string cr;
             double pt;
             //Variaveis
@@ -17,8 +16,6 @@ namespace P6exCaneta
             //Chamando o obj Caneta
 
 
-            Console.Write("Nivel da tinta:");
-            nv = Convert.ToInt32(Console.ReadLine());
             Console.Write("Cor da tinta:");
             cr = Console.ReadLine();
             Console.Write("Espessura da ponta da caneta: ");
@@ -27,6 +24,7 @@ namespace P6exCaneta
             //Chamando os atributos privados
             obj.Cor = cr;
             obj.Ponta = pt;
+            obj.TintaQtde = 100;
             //Chamando os atributos privados
 
 
@@ -36,13 +34,88 @@ namespace P6exCaneta
             //Apresentação
             Console.WriteLine($"Cor: {obj.Cor}");
             Console.WriteLine($"Ponta: {obj.Ponta}");
-            Console.WriteLine($"Nivel da tinta: {nv}");
+            Console.WriteLine($"Nivel da tinta: {obj.TintaQtde}");
             //Apresentação
 
             //Chamando os métodos
             obj.tamparEdestampar();
-            obj.rabiscar(nv);
+            obj.rabiscar();
             //Chamando os métodos
+
+            //usando a caneta
+            if(obj.Qdc == true)
+            {
+                //Variaveis
+                int tintalc = 100;
+                bool menu = true;
+                int escolha;
+                //Variaveis
+
+                //Menu
+                while(menu == true)
+                {
+                    Console.WriteLine($"(1) Rabiscar (- 10 da tinta) Quantidade da tinta : {obj.TintaQtde}%");
+                    Console.WriteLine("(2) Fechar caneta");
+                    Console.Write("Escolha: ");
+                    escolha = Convert.ToInt32(Console.ReadLine());
+
+                    //escolha 1 rabiscar
+                    if(escolha == 1)
+                    {
+                        //Calculo da tinta
+                        obj.TintaQtde = tintalc - 10;
+                        tintalc = obj.TintaQtde;
+                        //____________________________
+
+                        //opção se tiver tinta
+                        if(tintalc >= 1)
+                        {
+                            Console.WriteLine($"Rabiscando {obj.TintaQtde}" );
+                        }
+                        //_____________________________
+
+                        //se não tiver tinta
+                        if(tintalc <= 0)
+                        {
+                            Console.WriteLine("A tinta acabou!!");
+                            Console.ReadLine();
+                            escolha = 2;
+                        }
+                        //_____________________________
+
+
+                    }
+                    //Escolha 1 rabiscar
+
+                    //Escolha 2 sair do programa
+                    if(escolha == 2)
+                    {
+                        Console.WriteLine("Caneta fechada");
+                        menu = false;
+                        Console.ReadLine();
+                    }
+                    //Escolha 2 sair do programa
+
+                    //Comando não identificado
+                    else
+                    {
+                        Console.WriteLine("Não conheço esse comando!");
+                        Console.ReadLine();
+                    }
+                    //Comando não identificado
+
+                }
+
+            }
+            //usando a caneta
+
+            //caneta não liberada
+            if(obj.Qdc == false)
+            {
+                Console.WriteLine("Saindo");
+                Console.ReadLine();
+            }
+            //caneta não liberada
 
         }
     }
