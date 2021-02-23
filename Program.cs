@@ -24,7 +24,6 @@ namespace P6exCaneta
             //Chamando os atributos privados
             obj.Cor = cr;
             obj.Ponta = pt;
-            obj.TintaQtde = 100;
             //Chamando os atributos privados
 
 
@@ -46,7 +45,7 @@ namespace P6exCaneta
             if(obj.Qdc == true)
             {
                 //Variaveis
-                int tintalc = 100;
+                int tintalc;
                 bool menu = true;
                 int escolha;
                 //Variaveis
@@ -63,19 +62,19 @@ namespace P6exCaneta
                     if(escolha == 1)
                     {
                         //Calculo da tinta
-                        obj.TintaQtde = tintalc - 10;
-                        tintalc = obj.TintaQtde;
+                        tintalc = obj.TintaQtde - 10;
+                        obj.TintaQtde = tintalc;
                         //____________________________
 
                         //opção se tiver tinta
-                        if(tintalc >= 1)
+                        if(obj.TintaQtde >= 1)
                         {
                             Console.WriteLine($"Rabiscando {obj.TintaQtde}" );
                         }
                         //_____________________________
 
                         //se não tiver tinta
-                        if(tintalc <= 0)
+                        if(obj.TintaQtde <= 0)
                         {
                             Console.WriteLine("A tinta acabou!!");
                             Console.ReadLine();

@@ -8,7 +8,7 @@ class Caneta
     private double ponta;
     private string cor;
     private bool tampa = true;
-    private int tintaQtde;
+    private int tintaQtde = 100;
     private bool qdc = false;
     //QDC = Qualidade da caneta
     //Atributos//
