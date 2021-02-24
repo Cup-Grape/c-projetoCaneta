@@ -33,7 +33,7 @@ namespace P6exCaneta
             //Apresentação
             Console.WriteLine($"Cor: {obj.Cor}");
             Console.WriteLine($"Ponta: {obj.Ponta}");
-            Console.WriteLine($"Nivel da tinta: {obj.TintaQtde}%");
+            Console.WriteLine($"Nivel da tinta: {obj.TintaQtde}");
             //Apresentação
 
             //Chamando os métodos
@@ -46,7 +46,7 @@ namespace P6exCaneta
             {
                 Console.Clear();
                 int escolha;
-                Console.WriteLine($"(1) Rabiscar gasta 10% da tinta ({obj.TintaQtde}%)");
+                Console.WriteLine($"(1) Rabiscar gasta 10% da tinta ({obj.TintaQtde})");
                 Console.WriteLine($"(2) Deixar a caneta");
                 Console.Write($"Escolha: ");
                 escolha = Convert.ToInt32(Console.ReadLine());

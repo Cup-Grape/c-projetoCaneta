@@ -33,7 +33,6 @@ class Caneta
     public int TintaQtde
     {
         get{return tintaQtde;}
-        set{tintaQtde = value;}
     }
     //Get e set
 
@@ -56,9 +55,8 @@ class Caneta
                 Console.ReadLine();
 
                 //Calculo para gastar tinta
-                int calc;
-                calc = tintaQtde - 10;
-                tintaQtde = calc;
+                tintaQtde -= 10;
+                
                 //_________________________
 
                 Console.WriteLine("Rabiscando...");
@@ -72,7 +70,7 @@ class Caneta
             {
                 Console.WriteLine("Rabiscando...");
                 Console.WriteLine("Não está saindo tinta");
-                Console.WriteLine($"{tintaQtde}%");
+                Console.WriteLine($"nivel de tinta: {tintaQtde}");
                 Console.ReadLine();
             }
             //____________________________
@@ -85,6 +83,7 @@ class Caneta
         {
             Console.WriteLine("A caneta está tampada");
             Console.WriteLine("Não é possivel rabiscar");
+            Console.ReadLine();
         }
         //Se a tampa estiver na caneta
 
